@@ -1,0 +1,357 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+/*                 Fonts                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100; 
+}
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+/*               End of Setup             */
+
+
+body {
+  font-family: "Myriad Set Pro";
+}
+
+/*                HTML Header               */ 
+header {
+  max-width: 100%;
+  background-color: black;
+}
+/*                  NAV Section             */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: inline-block;
+  margin: 0 auto;
+  width: 10%;
+}
+
+.nav:hover {
+  opacity: 75%;
+}
+
+/*                  HERO Section            */
+#product-info {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#product-name {
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-size: 55px;
+  margin: 50px 0 10px 0;
+}
+
+#product-subtext {
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.links {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(79, 79, 250);
+}
+
+.links:hover {
+  opacity: 75%;
+  text-decoration: underline; 
+}
+
+#product-links {
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+  font-size: 25px;
+  max-width: 100%;
+  margin: 25px 0;
+  text-align: center;
+}
+
+#product-img {
+  background-image: url("./images/hero_iphone_13pro.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 650px;
+  margin-top: -230px;
+}
+
+/*                SUBHERO Section           */
+.subhero {
+  max-width: 100%;
+  margin: -5px 0;
+  height: 200px;
+}
+
+.col-3 {
+  display: inline-block;
+  margin: 0 auto;
+  width: 25%;
+}
+
+#sub-watch {
+  background-image: url("./images/watch_large.jpg");
+  border-right: 2px solid white;
+}
+
+#sub-ipad {
+  background-image: url("./images/ipad_pro_large.jpg");
+  border-right: 2px solid white;
+}
+
+#sub-better {
+  background-image: url("./images/accessories_large.jpg");
+  border-right: 2px solid white;
+}
+
+#sub-macbook {
+  background-image: url("./images/macbook_large.jpg");
+}
+
+#sub-watch,
+#sub-ipad,
+#sub-better,
+#sub-macbook {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+
+/*              SUBHERO Adapter Link            */     
+.adapter {
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+  font-size: 20px;
+  max-width: 100%;
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+
+#ac {
+  color: rgb(79, 79, 250);
+  text-decoration: none;
+}
+
+#ac:hover {
+  opacity: 75%;
+  text-decoration: underline;
+}
+
+/*                FOOTER NAV Section      */
+footer {
+  background-color: rgb(242, 242, 242);
+  padding-bottom: 30px;
+}
+
+#footer-nav-header {
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 500;
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+#footer-nav-list > a {
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 500;
+  font-size: 11px;
+  opacity: 50%;
+  color: black;
+  text-decoration: none;
+  border: 0.1px solid rgb(242, 242, 242);
+}
+
+.col-5 {
+  display: inline-block;
+  margin: 0 auto;
+  width: 19%;
+  height: 100%;
+  text-align: left;
+  vertical-align: top;
+}
+
+/*              FOOTER Copyright Section        */
+.ways-to-shop {
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 500;
+  font-size: 11px;
+  opacity: 50%;
+  max-width: 1100px;
+  text-align: left;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: rgb(79, 79, 250);
+}
+
+.footer-links:hover {
+  opacity: 75%;
+  text-decoration: underline;
+}
+
+.legal {
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 500;
+  font-size: 11px;
+  vertical-align: top;
+}
+
+.legal-links {
+  display: inline-block;
+  margin: 0 auto;
+  align-items: left;
+  padding-top: 10px;
+}
+
+#copyright {
+  float: left;
+  opacity: 50%;
+}
+
+#privacy-policy,
+#terms-of-use,
+#sales-and-refunds,
+#site-map {
+  float: center;
+  width: 10%;
+  color: black;
+  text-decoration: none;
+  opacity: 50%;
+}
+
+#usa,
+#united-states {
+  float: right;
+  color: black;
+  text-decoration: none;
+  opacity: 50%;
+  text-align: right;
+}
+
+#united-states {
+  background-image: url("./images/usa.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  margin-top: 2px;
+  width: 80px;
+}
+
+#privacy-policy:hover,
+#terms-of-use:hover,
+#sales-and-refunds:hover,
+#site-map:hover,
+#usa:hover,
+#united-states:hover {
+  text-decoration: underline;
+  opacity: 75%;
+}
